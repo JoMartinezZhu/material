@@ -6,6 +6,11 @@
 该项目是为了创建作者的的物料集合而创建的。使用了 create-react-app 脚手架创建，并添加了自己的一些工程化配置。
 项目中包管理工具使用了 yarn ,当然也可以使用 npm，需要把 yarn.lock 、node_modules 删除，然后在 npm install。
 
+### 项目启动
+
+`1. npm install`
+`2. npm start`
+
 ## 物料列表（清单）
 
 1. AdvancedForm (使用参考：./src/AdvancedForm/Example)
