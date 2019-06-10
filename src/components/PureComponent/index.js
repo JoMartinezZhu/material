@@ -1,6 +1,7 @@
-import React from 'react';
-import autoBind from '../../utils/autoBind';
-import classNameCombine from '../../utils/classNameCombine';
+import React from "react";
+
+import autoBind from "../../utils/autoBind";
+import { classNameCombine } from "../../utils/index";
 
 /**
  * @author 朱双杰
@@ -11,9 +12,9 @@ import classNameCombine from '../../utils/classNameCombine';
  * 2、混合了styles，配合module css使用
  */
 export default class PureComponent extends React.PureComponent {
-    constructor(props, styles) {
-        super(props);
-        autoBind(this);
-        this.styles = classNameCombine(styles, props.styles);
-    }
+  constructor(props, styles) {
+    super(props);
+    autoBind(this);
+    this.styles = classNameCombine(styles, props.styles);
+  }
 }
