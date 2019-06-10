@@ -1,4 +1,14 @@
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+**作者: 朱双杰**
+**邮箱: henry.zhushuangjie@outlook.com**
+
+## 项目说明
+
+该项目是为了创建作者的的物料集合而创建的。使用了 create-react-app 脚手架创建，并添加了自己的一些工程化配置。
+项目中包管理工具使用了 yarn ,当然也可以使用 npm，需要把 yarn.lock 、node_modules 删除，然后在 npm install。
+
+## 物料列表（清单）
+
+1. AdvancedForm (使用参考：./src/AdvancedForm/Example)
 
 ## Available Scripts
 
@@ -11,11 +21,6 @@ Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
 
 The page will reload if you make edits.<br>
 You will also see any lint errors in the console.
-
-### `npm test`
-
-Launches the test runner in the interactive watch mode.<br>
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
 
 ### `npm run build`
 
