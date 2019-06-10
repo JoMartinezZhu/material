@@ -61,7 +61,12 @@ export default class Example extends PureComponent {
             });
         */
     // React15&16
-    console.log(this.formRef);
+    this.formRef.props.form.validateFieldsAndScroll((err, values) => {
+      if (err) {
+        return;
+      }
+      console.log("values", values);
+    });
   };
 
   formRefFun = formRef => {
