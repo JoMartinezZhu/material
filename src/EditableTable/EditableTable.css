@@ -1,0 +1,43 @@
+.editable-cell {
+  position: relative;
+  background: blue;
+}
+
+.editable-cell-value-wrap {
+  padding: 5px 12px;
+  cursor: pointer;
+}
+
+.editable-row:hover .editable-cell-value-wrap {
+  position: relative;
+  border: 1px solid #d9d9d9;
+  border-radius: 4px;
+  padding: 4px 11px;
+}
+
+/* 
+.editable-row:hover .editable-cell-value-wrap:after {
+  position: absolute;
+  right: 15px;
+  top: 18px;
+  width: 0;
+  height: 0;
+  content: "";
+  border-width: 6px 6px 0 6px;
+  border-style: solid;
+  border-color: #fff transparent;
+  transition: all 0.25s;
+}
+
+.editable-row:hover .editable-cell-value-wrap:before {
+  position: absolute;
+  right: 13px;
+  top: 18px;
+  width: 0;
+  height: 0;
+  content: "";
+  border-width: 8px 8px 0 8px;
+  border-style: solid;
+  border-color: #d36969 transparent;
+  transition: transform 0.25s;
+} */
