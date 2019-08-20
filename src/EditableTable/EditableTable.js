@@ -18,10 +18,6 @@ const EditableRow = props => {
 const EditableFormRow = Form.create()(EditableRow);
 
 class EditableCell extends React.Component {
-  constructor(props) {
-    super(props);
-    console.log(props);
-  }
   state = {
     editing: false
   };
@@ -36,6 +32,7 @@ class EditableCell extends React.Component {
   };
 
   save = e => {
+    console.log("save");
     const { record, handleSave } = this.props;
     this.form.validateFields((error, values) => {
       if (error) {
@@ -79,7 +76,6 @@ class EditableCell extends React.Component {
             ref={node => (this.select = node)}
             style={{ width: "100%" }}
             placeholder="Select a person"
-            optionFilterProp="children"
             onChange={this.change}
             onBlur={this.save}
           >
@@ -93,7 +89,10 @@ class EditableCell extends React.Component {
       <div
         className="editable-cell-value-wrap"
         style={{ paddingRight: 24 }}
-        onClick={this.toggleEdit}
+        onClick={() => {
+          console.log("onClick");
+          this.toggleEdit();
+        }}
       >
         {children}
       </div>
